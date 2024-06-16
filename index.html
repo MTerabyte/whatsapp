@@ -52,7 +52,7 @@
         function redirectToWhatsApp(event) {
             event.preventDefault();
             const phoneNumber = document.getElementById('phone-number').value;
-            const whatsappUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}`;
+            const whatsappUrl = `https://wa.me/send?phone=${phoneNumber}`;
             window.location.href = whatsappUrl;
         }
     </script>
