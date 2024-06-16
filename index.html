@@ -49,11 +49,10 @@
     </div>
 
     <script>
-        function redirectToWhatsApp(event) {
-            event.preventDefault();
-            const phoneNumber = document.getElementById('phone-number').value;
-            const whatsappUrl = `https://wa.me/send?phone=${phoneNumber}`;
-            window.location.href = whatsappUrl;
+        function sendMessage() {
+    var phoneNumber = "+91"; // Replace with the phone number you want to add
+    var whatsappURL = "https://wa.me/" + phoneNumber;
+    window.location.href = whatsappURL;
         }
     </script>
 </body>
